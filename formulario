@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Encuesta Bienestar en Oficina</title>
+
+<style>
+
+body{
+font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto;
+background:#f2f4f7;
+margin:0;
+padding:20px;
+}
+
+.container{
+max-width:520px;
+margin:auto;
+background:white;
+padding:28px;
+border-radius:14px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+h1{
+font-size:22px;
+margin-bottom:10px;
+text-align:center;
+}
+
+.description{
+text-align:center;
+font-size:14px;
+color:#666;
+margin-bottom:25px;
+}
+
+label{
+display:block;
+margin-top:18px;
+font-weight:600;
+font-size:14px;
+}
+
+input,select,textarea{
+width:100%;
+padding:12px;
+margin-top:6px;
+border-radius:8px;
+border:1px solid #dcdcdc;
+font-size:14px;
+}
+
+textarea{
+resize:none;
+}
+
+button{
+width:100%;
+padding:14px;
+margin-top:24px;
+background:#2563eb;
+color:white;
+font-size:16px;
+font-weight:600;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+button:hover{
+background:#1d4ed8;
+}
+
+.footer{
+text-align:center;
+font-size:12px;
+color:#888;
+margin-top:14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Encuesta sobre Trabajo en Oficina</h1>
+
+<p class="description">
+Esta breve encuesta busca conocer los principales desafíos que enfrentan las personas que trabajan varias horas en oficina.
+</p>
+
+<form action="https://formspree.io/f/mgoplqey" method="POST">
+
+<label>¿Cuál es la mayor incomodidad física que experimenta después de varias horas trabajando?</label>
+
+<select name="dolor">
+<option>Dolor de espalda</option>
+<option>Dolor de cuello</option>
+<option>Cansancio visual</option>
+<option>Dolor en muñecas</option>
+<option>Estrés o fatiga</option>
+</select>
+
+<label>¿Qué aspecto de su espacio de trabajo considera que podría mejorar?</label>
+
+<textarea name="mejora" rows="3"></textarea>
+
+<label>¿Utiliza actualmente algún producto para mejorar su comodidad en el trabajo?</label>
+
+<input type="text" name="producto" placeholder="Ejemplo: cojín, lentes, soporte laptop">
+
+<label>Si pudiera mejorar una sola cosa de su trabajo en oficina, ¿qué sería?</label>
+
+<textarea name="idea" rows="3"></textarea>
+
+<label>Correo electrónico (opcional)</label>
+
+<input type="email" name="email" placeholder="correo@ejemplo.com">
+
+<button type="submit">Enviar respuesta</button>
+
+</form>
+
+<p class="footer">
+Encuesta confidencial • Investigación de bienestar laboral
+</p>
+
+</div>
+
+</body>
+</html>
+```
